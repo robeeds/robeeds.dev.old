@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "@/app/ui/globals.css"
+import NavBar from "./ui/navbar";
 
 export const metadata: Metadata = {
   title: "RobeeDS | Full Stack Developer",
@@ -14,8 +15,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased`}
+        className={`antialiased font-poppins bg-black text-dimWhite`}
       >
+        <NavBar />
         {children}
       </body>
     </html>
