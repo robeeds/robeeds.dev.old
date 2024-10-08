@@ -13,9 +13,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-black antialiased font-poppins text-dimWhite">
       <body
-        className={`antialiased font-poppins bg-black text-dimWhite`}
+        className={`flex flex-col items-center`}
       >
         <NavBar />
         {children}
