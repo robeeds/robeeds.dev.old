@@ -1,11 +1,13 @@
 'use client'
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
 import { navLinks } from "../constants/constants.js"
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+
 
 export default function NavBar() {
     //Toggle for sidenav on mobile
@@ -15,7 +17,7 @@ export default function NavBar() {
         <nav className="w-full max-w-[1440px]">
 
             {/* For Large Screens */}
-            <div className="hidden md:flex flex-row justify-between p-4 ">
+            <div className="hidden md:flex flex-row justify-between p-4 bg-black">
 
                 {/* Logo and name on the left*/}
                 <div className="flex flex-row items-center">
@@ -46,7 +48,7 @@ export default function NavBar() {
             </div>
 
             {/* For Mobile */}
-            <div className="md:hidden flex flex-row justify-between p-4">
+            <div className="md:hidden flex flex-row justify-between p-4 bg-black">
 
                 {/* Logo and name on the left */}
                 <div className="flex flex-row items-center">
@@ -60,17 +62,18 @@ export default function NavBar() {
                 </div>
 
                 {/* Toggle on Click */}
-                <div 
-                    className="w-[32px] h-[32px]"
+                <button 
+                    className="w-[32px] h-[32px] bg-black"
                     onClick={() => setToggle((prev) => !prev)}
                 >
 
                     {toggle ? <XMarkIcon /> : <Bars3Icon />}
 
-                </div>
+                </button>
 
                 {/* Sidebar Display */}
-                <div className={`${toggle ? 'flex' : 'hidden'} absolute right-0 top-[40px]`}>
+                <motion.div
+                    className={`${toggle ? 'flex' : 'hidden'} absolute right-0 mt-8 px-4 bg-black`}>
                     <div className="">
                         {navLinks.map((link, index) => {
                             return(
@@ -84,7 +87,7 @@ export default function NavBar() {
                             );
                         })}
                     </div>
-                </div>
+                </motion.div>
 
             </div>
 

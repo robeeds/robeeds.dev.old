@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-black antialiased font-poppins text-dimWhite">
+    <html lang="en" className=" antialiased font-poppins text-dimWhite">
       <body
         className={`flex flex-col items-center`}
       >
