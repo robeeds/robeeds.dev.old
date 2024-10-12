@@ -5,8 +5,13 @@ export default function Hero() {
     return (
       <div className="z-[1] w-full flex flex-col md:flex-row items-center p-4">
         
-        {/* This will be the landing text */}
-        <div className="z-[4] flex flex-col flex-1">
+        {/* Top(SM) Left(LG) Elements */}
+        <div className="z-[4] flex flex-col flex-1 relative">
+
+            {/* Background Gradient */}
+            <div className='absolute z-[0] w-[30%] h-[40%] left-[0%] top-[50%] white__gradient' />
+            
+            {/* This will be the landing text */}
             <div className="font-semibold">
                 <p className="text-[48px]">
                     INNOVATE.
