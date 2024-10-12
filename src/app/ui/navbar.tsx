@@ -47,7 +47,7 @@ export default function NavBar() {
     }
 
     return (
-        <nav className="w-full py-4">
+        <nav className="w-full p-4">
 
             {/* For Large Screens */}
             <div className="flex flex-row justify-between">
