@@ -30,7 +30,7 @@ const containerVariants = {
 
 export default function NavBar() {
     
-    // 
+    // Toggle state for Mobile Sidebar
     const [isOpen, setIsOpen] = useState(false)
     const containerControls = useAnimationControls()
     
@@ -47,10 +47,10 @@ export default function NavBar() {
     }
 
     return (
-        <nav className="w-full">
+        <nav className="w-full py-4">
 
             {/* For Large Screens */}
-            <div className="flex flex-row justify-between p-4">
+            <div className="flex flex-row justify-between">
 
                 {/* Logo and name on the left*/}
                 <div className="flex flex-row items-center">
@@ -60,7 +60,7 @@ export default function NavBar() {
                         height={32}
                         alt="RobeeDS Logo"
                     />
-                    <p className="px-2">robeeds</p>
+                    <p className="px-2 text-dimWhite">robeeds</p>
                 </div>
 
                 {/* For Large Screens, Links on Right */}
@@ -72,7 +72,11 @@ export default function NavBar() {
                                 href={link.href}
                                 className={`px-3`}
                             >
-                                <p className={`${index === navLinks.length - 1 ? 'bg-blue text-black px-4 p-2.5 rounded-full' : ''}`}>{link.name}</p>
+                                <motion.p
+                                    whileHover={{ scale: 1.1 }}
+                                    className={`${index === navLinks.length - 1 ? 'bg-blue text-black px-4 p-2.5 rounded-full' : 'text-gray hover:text-white'}`}>
+                                    {link.name}
+                                </motion.p>
                             </Link>
                         );
                     })}
