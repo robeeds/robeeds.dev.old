@@ -12,8 +12,11 @@ const config: Config = {
         poppins: ['Poppins', 'sans-serif']
       },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        black: "#0A0E16", 
+        white: "#FFFFFF",
+        gray: "#B9B9B9",
+        dimWhite: "#E1E5E5",
+        blue: "#5FB2F7",
       },
     },
   },

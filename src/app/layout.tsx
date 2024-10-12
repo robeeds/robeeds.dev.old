@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "@/app/ui/globals.css"
+import NavBar from "./ui/navbar";
 
 export const metadata: Metadata = {
   title: "RobeeDS | Full Stack Developer",
@@ -12,10 +13,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="flex justify-center items-center antialiased font-poppins text-dimWhite bg-black">
       <body
-        className={`antialiased`}
+        className={`w-full max-w-[1280px]`}
       >
+        <NavBar />
         {children}
       </body>
     </html>
