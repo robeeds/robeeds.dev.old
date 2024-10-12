@@ -21,3 +21,18 @@
     text-wrap: balance;
   }
 }
+
+.blue__gradient {
+    background: linear-gradient(180deg, rgba(24, 74, 94, 0) 0%, #184A5E 100%);
+    filter: blur(140px);
+}
+
+.green__gradient {
+    background: linear-gradient(135deg, rgba(79, 167, 105, 0) 0%, #4FA769 46%);
+    filter: blur(140px);
+}
+
+.white__gradient {
+    background: linear-gradient(45deg, rgba(195, 213, 200, 0) 0%, #C3D5C8 100%);
+    filter: blur(140px);
+}
