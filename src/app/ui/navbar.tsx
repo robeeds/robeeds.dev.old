@@ -47,13 +47,12 @@ export default function NavBar() {
     }
 
     return (
-        <nav className="w-full p-4">
+        <nav className="w-full">
 
-            {/* For Large Screens */}
-            <div className="flex flex-row justify-between">
+            <div className="flex flex-row justify-between px-4">
 
                 {/* Logo and name on the left*/}
-                <div className="flex flex-row items-center">
+                <div className="flex flex-row items-center py-4">
                     <Image
                         src="/images/logo.png"
                         width={32}
@@ -64,7 +63,7 @@ export default function NavBar() {
                 </div>
 
                 {/* For Large Screens, Links on Right */}
-                <div className="hidden md:flex flex-row items-center">
+                <div className="hidden md:flex flex-row items-center p-4">
                     {navLinks.map((link, index) => {
                         return (
                             <Link
@@ -74,7 +73,7 @@ export default function NavBar() {
                             >
                                 <motion.p
                                     whileHover={{ scale: 1.1 }}
-                                    className={`${index === navLinks.length - 1 ? 'bg-blue text-black px-4 p-2.5 rounded-full' : 'text-gray hover:text-white'}`}>
+                                    className={`${index === navLinks.length - 1 ? 'bg-blue text-black px-4 py-2.5 rounded-full' : 'text-gray hover:text-white'}`}>
                                     {link.name}
                                 </motion.p>
                             </Link>
@@ -87,7 +86,7 @@ export default function NavBar() {
                     variants={containerVariants}
                     animate={containerControls}
                     initial="close"
-                    className={`flex flex-col gap-3 md:hidden ${isOpen ? 'absolute bg-black right-0 h-full' : ''}`}
+                    className={`z-[5] flex flex-col gap-3 md:hidden py-4 ${isOpen ? 'absolute right-0 h-full bg-black' : ''}`}
                 >
                     {/* Dropdown Button */}
                     <button onClick={() => handleOpenClose()}>
@@ -106,7 +105,7 @@ export default function NavBar() {
                                     key={link.name}
                                     href={link.href}
                                 >
-                                    <p className={`${index === navLinks.length - 1 ? 'bg-blue text-black px-4 p-2.5 rounded-full' : ''}`}>{link.name}</p>
+                                    <p className={`${index === navLinks.length - 1 ? 'bg-blue text-black px-4 py-2.5 rounded-full' : ''}`}>{link.name}</p>
                                 </Link>
                             );
                         })}

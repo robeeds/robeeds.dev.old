@@ -3,10 +3,10 @@ import landingIMG from "/public/images/landing.svg"
 
 export default function Hero() {
     return (
-      <div className="w-full flex flex-col md:flex-row items-center p-4">
+      <div className="z-[1] w-full flex flex-col md:flex-row items-center p-4">
         
         {/* This will be the landing text */}
-        <div className="z-[5] flex flex-col flex-1">
+        <div className="z-[4] flex flex-col flex-1">
             <div className="font-semibold">
                 <p className="text-[48px]">
                     INNOVATE.
@@ -20,7 +20,7 @@ export default function Hero() {
         </div>
 
         {/* This will be the landing image */}
-        <div className="flex">
+        <div className="flex relative">
 
             <Image
                 src={landingIMG}
@@ -29,13 +29,13 @@ export default function Hero() {
                 height={0}
                 sizes="100h"
                 priority={true}
-                className="z-[5]"
+                className="z-[4]"
             />
 
             {/* Background Gradients */}
-            <div className='absolute z-[0] w-[30%] h-[40%] right-[30vw] green__gradient' />
-            <div className='absolute z-[0] w-[30%] h-[40%] right-[20vw] white__gradient' />
-            <div className='absolute z-[0] w-[30%] h-[40%] top-[25vh] right-[20vw] blue__gradient' />
+            <div className='absolute z-[1] w-[30%] h-[40%] left-[20%] top-[17%] green__gradient' />
+            <div className='absolute z-[0] w-[30%] h-[40%] right-[20%] top-[17%] white__gradient' />
+            <div className='absolute z-[1] w-[30%] h-[40%] top-[25%] right-[20%] blue__gradient' />
 
         </div>
 
