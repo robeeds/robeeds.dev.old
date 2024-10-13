@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="flex justify-center items-center antialiased font-poppins text-dimWhite bg-black scroll-smooth">
       <body
-        className={`w-full max-w-[1280px]`}
+        className={`w-full max-w-[1440px]`}
       >
         <NavBar />
         {children}

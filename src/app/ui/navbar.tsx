@@ -63,17 +63,16 @@ export default function NavBar() {
                 </div>
 
                 {/* For Large Screens, Links on Right */}
-                <div className="hidden md:flex flex-row items-center p-4">
+                <div className="hidden md:flex flex-row items-center py-4">
                     {navLinks.map((link, index) => {
                         return (
                             <Link
                                 key={link.name}
                                 href={link.href}
-                                className={`px-3`}
                             >
                                 <motion.p
                                     whileHover={{ scale: 1.1 }}
-                                    className={`${index === navLinks.length - 1 ? 'bg-blue text-black px-4 py-2.5 rounded-full' : 'text-gray hover:text-white'}`}>
+                                    className={`${index === navLinks.length - 1 ? 'bg-blue text-black px-4 py-2.5 rounded-full' : 'text-gray hover:text-white pr-6'}`}>
                                     {link.name}
                                 </motion.p>
                             </Link>
