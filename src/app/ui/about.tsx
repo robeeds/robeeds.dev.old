@@ -15,7 +15,7 @@ export default function About() {
             <p className="flex text-nowrap font-semibold text-[48px] ">I'm Robee D.</p>
 
             {/* Description */}
-            <p>I'm Robee, a college student with a passion for full-stack development. Specializing in crafting captivating digital experiences, I'm your go-to person for all things creative and tech-savvy.</p>
+            <p>I'm Robee, a college student with a passion for full-stack development, data analytics, and cybersecurity. Specializing in crafting captivating digital experiences, I'm your go-to person for all things creative and tech-savvy.</p>
         </div>
 
         {/* Bottom(SM) Left{LG} Section */}
