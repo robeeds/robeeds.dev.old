@@ -20,3 +20,12 @@ export const navLinks = [
         href: '/#contact',
     },
 ];
+
+export const projects = [
+    {
+    },
+    {
+    },
+    {
+    },
+]
