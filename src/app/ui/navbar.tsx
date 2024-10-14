@@ -1,12 +1,11 @@
 'use client'
 
-import { useState } from "react";
 import { motion, useAnimationControls } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
 import { navLinks } from "../constants/constants.js"
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const containerVariants = {
@@ -31,8 +30,8 @@ const containerVariants = {
 export default function NavBar() {
     
     // Toggle state for Mobile Sidebar
-    const [isOpen, setIsOpen] = useState(false)
-    const containerControls = useAnimationControls()
+    const [isOpen, setIsOpen] = useState(false);
+    const containerControls = useAnimationControls();
     
     useEffect(() => {
         if(isOpen) {
@@ -40,7 +39,7 @@ export default function NavBar() {
         } else {
             containerControls.start("close")
         }
-    }, [isOpen])
+    }, [isOpen, containerControls]);
 
     const handleOpenClose = () => {
         setIsOpen(!isOpen)

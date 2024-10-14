@@ -1,7 +1,5 @@
 import Image from "next/image";
 import headshot from "/public/images/headshot.png"
-import { head } from "framer-motion/client";
-
 
 export default function About() {
   return (
@@ -12,10 +10,10 @@ export default function About() {
         <div className="relative flex flex-col md:p-4 md:m-4 md:border-l-2">
             
             {/* Title */}
-            <p className="flex text-nowrap font-semibold text-[48px] ">I'm Robee D.</p>
+            <p className="flex text-nowrap font-semibold text-[48px] ">I&apos;m Robee D.</p>
 
             {/* Description */}
-            <p>I'm Robee, a college student with a passion for full-stack development, data analytics, and cybersecurity. Specializing in crafting captivating digital experiences, I'm your go-to person for all things creative and tech-savvy.</p>
+            <p>I&apos;m Robee, a college student with a passion for full-stack development, data analytics, and cybersecurity. Specializing in crafting captivating digital experiences, I&apos;m your go-to person for all things creative and tech-savvy.</p>
         </div>
 
         {/* Bottom(SM) Left{LG} Section */}
