@@ -4,8 +4,18 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 
-const ProjectCard = ({ title, num, langs, content, img, link }) => {
+type ProjectProps = {
+  title: string,
+  num: number,
+  langs: string[],
+  content: string,
+  img: string | StaticImport,
+  link: string,
+}
+
+const ProjectCard = ({ title, num, langs, content, img, link }: ProjectProps) => {
   return (
     <div className={`w-full flex flex-col md:flex-row p-4 ${num % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
         
