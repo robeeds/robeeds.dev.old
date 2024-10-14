@@ -3,7 +3,7 @@ import landingIMG from "/public/images/landing.svg"
 
 export default function Hero() {
     return (
-      <div className="z-[1] w-full flex flex-col md:flex-row items-center p-4">
+      <div className="z-[1] w-full flex flex-col md:flex-row md:items-center p-4">
         
         {/* Top(SM) Left(LG) Elements */}
         <div className="z-[4] flex flex-1 flex-col relative">
