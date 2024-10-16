@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="flex justify-center items-center antialiased font-poppins text-dimWhite bg-black scroll-smooth">
+    <html lang="en" className="flex justify-center items-center antialiased font-poppins text-dimWhite bg-black">
       <body
         className={`w-full max-w-[1440px]`}
       >

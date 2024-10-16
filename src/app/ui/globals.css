@@ -4,22 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.contact-card {
+  background: linear-gradient(90deg, rgba(95, 178, 247, 0.47), rgba(95, 178, 247, 0));
 }
 
 .blue__gradient {
