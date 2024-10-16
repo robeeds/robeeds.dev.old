@@ -3,8 +3,8 @@ export default function Contact() {
         <div id="contact" className="w-full flex flex-col md:flex-row contact-card rounded-[2.5vw] p-4 m-4">
             {/* (SM)Top (LG)Left */}
             <div className="flex flex-col justify-center p-4 md:min-w-[50%]">
-                <p className="font-semibold text-[48px] text-white">Let's Talk</p>
-                <p className="font-medium md:text-[24px]">Are you ready to bring your vision to life? Fill out the form to get in touch with me, and let's discuss how we can work together.</p>
+                <p className="font-semibold text-[48px] text-white">Let&apos;s Talk</p>
+                <p className="font-medium md:text-[24px]">Are you ready to bring your vision to life? Fill out the form to get in touch with me, and let&apos;s discuss how we can work together.</p>
             </div>
 
             {/* (SM)Bot (LG)Right */}
