@@ -8,8 +8,8 @@ const Technologies = () => {
         {/* Technologies */}
         <p className='font-semibold text-[36px] md:text-[48px]'>TECHNOLOGIES</p>
         <div className='w-full flex flex-1 flex-wrap justify-center'>
-            {techInfo.map((index) => 
-                <TechnologyCard key={index.id} {...index} />
+            {techInfo.map((index, id) => 
+                <TechnologyCard key={id} {...index} />
             )}
         </div>
     </div>

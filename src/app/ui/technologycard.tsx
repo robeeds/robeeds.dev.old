@@ -3,21 +3,21 @@ import Image from 'next/image'
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 
 type CardProps = {
-    lang: string;
+    name: string;
     img: string | StaticImport;
 }
 
-const TechnologyCard = ({ lang, img }: CardProps) => {
+const TechnologyCard = ({ name, img }: CardProps) => {
   return (
     <div className='flex flex-col items-center md:p-4'>
-        <p className='font-semibold text-[24px] text-dimWhite'>{lang}</p>
+        <p className='font-semibold text-[24px] text-dimWhite'>{name}</p>
         <Image 
           src={img} 
-          alt={lang} 
+          alt={name} 
           width={0}
           height={0}
-          sizes='100w'
-          className='min-w-[100px] min-h-[100px]'/>
+          className=''
+        />
     </div>
   )
 }

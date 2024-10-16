@@ -8,6 +8,9 @@ import javascriptIcon from "/public/images/javascript.svg"
 import reactIcon from "/public/images/react.svg"
 import tailwindIcon from "/public/images/tailwind.svg"
 import bootstrapIcon from "/public/images/bootstrap.svg"
+import nextjsIcon from "/public/images/nextjs.svg"
+import pythonIcon from "/public/images/python.svg"
+import typescriptIcon from "/public/images/typescript.svg"
 
 export const navLinks = [
     { 
@@ -62,33 +65,48 @@ export const projectInfo = [
 export const techInfo = [
     {
         id: 0,
-        lang: "HTML",
+        name: "HTML",
         img: htmlIcon,
     },
     {
         id: 1,
-        lang: "CSS",
+        name: "CSS",
         img: cssIcon,
     },
     {
         id: 2,
-        lang: "JavaScript",
+        name: "JavaScript",
         img: javascriptIcon,
     },
     {
         id: 3,
-        lang: "React",
-        img: reactIcon,
+        name: "TypeScript",
+        img: typescriptIcon,
     },
     {
         id: 4,
-        lang: "Tailwind",
-        img: tailwindIcon,
+        name: "React",
+        img: reactIcon,
     },
     {
         id: 5,
-        lang: "Bootstrap",
+        name: "Tailwind",
+        img: tailwindIcon,
+    },
+    {
+        id: 6,
+        name: "Bootstrap",
         img: bootstrapIcon,
+    },
+    {
+        id: 7,
+        name: "Next.js",
+        img: nextjsIcon
+    },
+    {
+        id: 8,
+        name: "Python",
+        img: pythonIcon,
     }
 ];
 
