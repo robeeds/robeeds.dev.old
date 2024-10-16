@@ -82,7 +82,7 @@ export default function NavBar() {
                 {/* For Mobile Screens, Links in Dropdown */}
                 <motion.div 
                     variants={containerVariants}
-                    animate={containerControls}
+                    //animate={containerControls}
                     initial="close"
                     className={`z-[5] flex flex-col gap-3 md:hidden py-4 ${isOpen ? 'absolute right-0 h-full bg-black' : ''}`}
                 >
