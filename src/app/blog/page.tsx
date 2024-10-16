@@ -1,3 +1,5 @@
 export default function Blog() {
-    return <h1>Blog</h1>
+    return (
+        <div className="flex flex-1">Blog</div>
+    )
 }

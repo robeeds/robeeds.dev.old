@@ -16,7 +16,7 @@ const TechnologyCard = ({ name, img }: CardProps) => {
           alt={name} 
           width={0}
           height={0}
-          className='w-[90px] h-[90px] md:max-w-[100px] md:max-h-[100px]'
+          className='flex flex-1 w-[64px] h-[64px] md:max-w-[100px] md:max-h-[100px]'
         />
     </div>
   )
