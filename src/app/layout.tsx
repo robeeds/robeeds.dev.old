@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "@/app/ui/globals.css"
 import NavBar from "./ui/navbar";
+import Footer from "./ui/footer";
 
 export const metadata: Metadata = {
   title: "RobeeDS | Full Stack Developer",
@@ -13,12 +14,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="flex justify-center items-center antialiased font-poppins text-dimWhite bg-black">
+    <html lang="en" className="flex flex-col justify-center items-center antialiased font-poppins text-dimWhite bg-black">
       <body
-        className={`w-full max-w-[1440px]`}
+        className={`flex flex-col justify-center min-h-[100vh] w-full max-w-[1440px]`}
       >
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
