@@ -1,3 +1,6 @@
+'use client'
+import { motion } from "framer-motion"
+
 export default function Contact() {
     return(
         <div id="contact" className="w-full flex flex-col md:flex-row contact-card rounded-[2.5vw] p-4 m-4">
@@ -25,7 +28,12 @@ export default function Contact() {
                     
 
                     {/* Send Button */}
-                    <button className='bg-blue text-black px-6 py-2.5 mt-2 rounded-full max-w-[90px]'>Send</button>
+                    <motion.button
+                        whileHover={{ scale: 1.1 }}
+                        className='bg-blue text-black px-6 py-2.5 mt-2 rounded-full max-w-[90px]'
+                    >
+                        Send
+                    </motion.button>
 
                 </form>
             </div>
