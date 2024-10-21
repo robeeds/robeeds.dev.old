@@ -6,7 +6,7 @@ import Footer from "./ui/footer";
 export const metadata: Metadata = {
   metadataBase: new URL('https://robeeds.tech'),
   title: "RobeeDS | Full Stack Developer",
-  description: "I’m Robee, a college student with a passion for web development. Specializing in crafting captivating digital experiences, I’m your go-to person for all things creative and tech-savvy.",
+  description: "I’m Robee, a university student with a passion for full-stack development, data analytics, and cybersecurity. Specializing in crafting captivating digital experiences, I’m your go-to person for all things creative and tech-savvy.",
   openGraph: {
     images: [
       {
