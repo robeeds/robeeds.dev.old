@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 
 export default function Contact() {
     return(
-        <div id="contact" className="w-full flex flex-col md:flex-row contact-card rounded-[2.5vw] p-4 m-4">
+        <div id="contact" className="flex flex-col md:flex-row contact-card rounded-[2.5vw] p-4 m-4">
             {/* (SM)Top (LG)Left */}
             <div className="flex flex-col justify-center p-4 md:min-w-[50%]">
                 <p className="font-semibold text-[48px] text-white">Let&apos;s Talk</p>
