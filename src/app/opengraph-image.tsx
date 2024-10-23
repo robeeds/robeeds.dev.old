@@ -17,7 +17,7 @@ export const contentType = 'image/png'
 export default async function Image() {
 
   // Font
-  const poppinsSemibold = fetch(new URL('./fonts/Poppins-Semibold.ttf', import.meta.url)).then((res) => res.arrayBuffer())
+  const poppinsSemibold = fetch(new URL('/public/fonts/Poppins-SemiBold.ttf', import.meta.url)).then((res) => res.arrayBuffer());
  
   return new ImageResponse(
     (
