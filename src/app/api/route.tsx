@@ -66,6 +66,7 @@ export async function GET(request: NextRequest) {
         )
 
     } catch (error) {
+        console.log("There is an error", error);
         return NextResponse.json( {message: 'Failed to generate OpenGraph Image'}, {status: 500});
     }
 }
