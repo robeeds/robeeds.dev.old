@@ -4,7 +4,7 @@ export async function generateMetadata(): Promise<Metadata> {
     const title = "Blog";
     const description = "Updates from RobeeDS";
 
-    const ogImageUrl = `/api?title=${title}&desc=${description}`;
+    const ogImageUrl = `/api/?title=${title}&desc=${description}`;
 
     return {
         title,

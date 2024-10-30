@@ -1,13 +1,9 @@
 import { ImageResponse } from "next/og";
+import { NextRequest, NextResponse } from "next/server";
 
 export const runtime = "edge"
-export const alt = "My Portfolio"
-export const size = {
-    width: 1200,
-    height: 630,
-}
 
-export async function GET(request: Request) {
+export async function GET(request: NextRequest) {
     try {
 
         // Extract search parameters from the request URL
@@ -69,9 +65,7 @@ export async function GET(request: Request) {
             }
         )
 
-    } catch (e: any) {
-
-        return new Response("Failed to generate OG Image", { status: 500})
-
+    } catch (error) {
+        return NextResponse.json( {message: 'Failed to generate OpenGraph Image'}, {status: 500});
     }
 }
