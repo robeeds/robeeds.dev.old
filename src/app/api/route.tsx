@@ -19,7 +19,7 @@ export async function GET(request: NextRequest) {
         
 
         // Importing Font
-        const poppinsSemibold = fetch(new URL('/public/fonts/Poppins-Semibold.ttf', import.meta.url)).then((res) => res.arrayBuffer());
+        const poppinsSemibold = fetch(new URL('/public/fonts/poppins-semibold.ttf', import.meta.url)).then((res) => res.arrayBuffer());
 
         return new ImageResponse(
             (
