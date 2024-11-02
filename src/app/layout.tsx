@@ -3,20 +3,30 @@ import "@/app/ui/globals.css"
 import NavBar from "./ui/navbar";
 import Footer from "./ui/footer";
 
-export const metadata: Metadata = {
-  metadataBase: new URL('https://robeeds.tech'),
-  title: "RobeeDS | Full Stack Developer",
-  description: "I’m Robee, a university student with a passion for full-stack development, data analytics, and cybersecurity. Specializing in crafting captivating digital experiences, I’m your go-to person for all things creative and tech-savvy.",
-  openGraph: {
-    images: [
-      {
-        url: '/api/',
-        width: 800,
-        height: 600,
+export async function generateMetadata(): Promise<Metadata> {
+  const title = "RobeeDS | Full Stack Developer";
+  const description = "I’m Robee, a university student with a passion for full-stack development, data analytics, and cybersecurity. Specializing in crafting captivating digital experiences, I’m your go-to person for all things creative and tech-savvy.";
+
+  const ogImageUrl = `/api/?title=${title}&desc=${description}`;
+
+  return {
+      metadataBase: new URL('https://robeeds.tech'),
+      title,
+      description,
+      openGraph: {
+          title,
+          description,
+          images: [
+              {
+                  url:ogImageUrl,
+                  width: 1200,
+                  height: 630,
+                  alt: "Blog - Open Graph Image",
+              },
+          ],
       },
-    ],
-  },
-};
+  };
+}
 
 export default function RootLayout({
   children,
