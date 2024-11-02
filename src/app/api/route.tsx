@@ -25,7 +25,7 @@ export async function GET(request: NextRequest) {
             (
                 <div
                     style={{
-                    backgroundImage: 'url(http://localhost:3000/images/og-bg.png)',
+                    backgroundImage: 'url(https://robeeds.tech/images/og-bg.png)',
                     width: '100%',
                     height: '100%',
                     display: 'flex',
