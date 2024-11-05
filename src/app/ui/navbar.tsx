@@ -87,7 +87,7 @@ export default function NavBar() {
                     className={`z-[5] flex flex-col gap-3 md:hidden py-4 ${isOpen ? 'absolute right-0 h-full bg-black' : ''}`}
                 >
                     {/* Dropdown Button */}
-                    <button onClick={() => handleOpenClose()} className={isOpen ? 'px-2': ""}>
+                    <button aria-label='Navigation Button' onClick={() => handleOpenClose()} className={isOpen ? 'px-2': "pr-2"}>
                         {isOpen ? (
                             <XMarkIcon height={32} width={32}/>
                         ) : (

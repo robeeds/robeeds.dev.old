@@ -16,15 +16,15 @@ export default function Contact() {
 
                     {/* This is the name field */}
                     <p className='text-white font-medium pt-2.5 pb-1'>Name</p>
-                    <input type='text' name='name' className='w-full p-1.5 mb-1 rounded-md bg-transparent border-[1px]' autoComplete="on" required />
+                    <input type='text' name='name' aria-label='Name Field' className='w-full p-1.5 mb-1 rounded-md bg-transparent border-[1px]' autoComplete="on" required />
 
                     {/* This is the email field */}
                     <p className='text-white font-medium pt-2.5 pb-1'>Email</p>
-                    <input type='text' name='email' className='w-full p-1.5 mb-1 rounded-md bg-transparent border-[1px]' autoComplete="on" required />
+                    <input type='text' name='email' aria-label='Email Field' className='w-full p-1.5 mb-1 rounded-md bg-transparent border-[1px]' autoComplete="on" required />
 
                     {/* This is the message field */}
                     <p className='text-white font-medium pt-2.5 pb-1'>Message</p>
-                    <textarea name='message' className="w-full min-h-20 p-1.5 rounded-md bg-transparent border-[1px]" required />
+                    <textarea name='message' aria-label='Message Field' className="w-full min-h-20 p-1.5 rounded-md bg-transparent border-[1px]" required />
                     
 
                     {/* Send Button */}
