@@ -1,36 +1,22 @@
-import { Metadata } from "next"
+import Link from "next/link"
+import { getBlogs } from "./fetchers"
 
-export async function generateMetadata(): Promise<Metadata> {
-    const title = "Blog";
-    const description = "Updates from RobeeDS";
-
-    const ogImageUrl = `/api/?title=${title}&desc=${description}`;
-
-    return {
-        title,
-        description,
-        openGraph: {
-            title,
-            description,
-            images: [
-                {
-                    url:ogImageUrl,
-                    width: 1200,
-                    height: 630,
-                    alt: "Blog - Open Graph Image",
-                },
-            ],
-        },
-    };
-}
-
-export default function Blog() {
+export default async function BlogsPage() {
+    const blogs = await getBlogs()
     return (
         <div className="flex flex-1 justify-center p-4">
             <div className="flex flex-col items-center">
                 <p className="text-[48px]">
-                    Coming Soon!
+                    Blog
                 </p>
+                {blogs.map((blog, i) => (
+                    <article key={i} className="grid grid-cols-4 text-3xl">
+                        <h1>{blog.frontmatter.title}</h1>
+                        <p>{blog.frontmatter.author}</p>
+                        <p>{blog.frontmatter.publishDate}</p>
+                        <Link href={`/blog/${blog.slug}`}>Read More</Link>
+                    </article> 
+                ))}
             </div>
         </div>
     )
