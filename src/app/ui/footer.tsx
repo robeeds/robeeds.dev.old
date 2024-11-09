@@ -14,7 +14,7 @@ export default function Footer() {
                 {/* Copyright */}
                 <div className="flex flex-1 justify-center md:justify-start p-4 md:p-0">
 
-                    <p>Copyright © RobeeDS</p>
+                    <p>Copyright © RobeeDS 2025</p>
 
                 </div>
 
