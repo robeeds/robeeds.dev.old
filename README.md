@@ -40,7 +40,7 @@ This is a landing page for an open source ePortfolio template. Built with Next.j
 
 ## Author
 
-- Website - [Robee D.](https://www.robeeds.tech)
+- Website - [Robee D.](https://www.robeeds.dev)
 
 ## Credits
 
