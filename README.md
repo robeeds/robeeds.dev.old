@@ -1,6 +1,6 @@
-# Portfolio Template
+# My Personal Portfolio
 
-This is a landing page for an open source ePortfolio template. Built with Next.js 14, React, Tailwind, and deployed on Vercel.
+This is my personal and modern ePortfolio. Built with Next.js 14, React, Tailwind, and deployed on Vercel.
 
 ## Table of Contents
 - [Overview](#overview)
