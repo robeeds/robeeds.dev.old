@@ -26,6 +26,7 @@ export default function Footer() {
                         href='https://github.com/robeeds'
                         target="blank" 
                         className="p-2">
+                        prefetch={false}
                         <Image 
                             src={githubIcon}
                             alt="Github"
@@ -39,6 +40,7 @@ export default function Footer() {
                         href='https://www.linkedin.com/in/robeeds/'
                         target="blank"
                         className="p-2"
+                        prefetch={false}
                     >
                         <Image
                             src={linkedinIcon}

@@ -13,7 +13,7 @@ export default function NotFound() {
             className='bg-blue text-black px-4 py-2.5 rounded-full'
             whileHover={{ scale: 1.1 }}
         >
-            <Link href='/'>Return Home</Link>
+            <Link href='/' prefetch={false}>Return Home</Link>
         </motion.button>
     </div>
   )

@@ -68,6 +68,7 @@ export default function NavBar() {
                             <Link
                                 key={link.name}
                                 href={link.href}
+                                prefetch={false}
                             >
                                 <motion.p
                                     whileHover={{ scale: 1.1 }}

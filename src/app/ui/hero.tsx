@@ -1,5 +1,5 @@
 import Image from "next/image";
-import landingIMG from "/public/images/landing.svg"
+import landingIMG from "/public/images/landing.webp"
 
 export default function Hero() {
     return (

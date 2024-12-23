@@ -1,5 +1,5 @@
 import Image from "next/image";
-import headshot from "/public/images/headshot.png"
+import headshot from "/public/images/portrait.webp"
 
 export default function About() {
   return (
