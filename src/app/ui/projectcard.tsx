@@ -23,7 +23,7 @@ const ProjectCard = ({ title, num, langs, content, img, link }: ProjectProps) =>
         <Image 
           src={img} 
           alt='Project Preview' 
-          className='flex flex-1 md:max-w-[55%] rounded-[2.5vw]'
+          className='flex flex-1 md:w-[55%] rounded-[2.5vw]'
         />
 
         {/* Project Description */}

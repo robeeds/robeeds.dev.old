@@ -1,6 +1,6 @@
-import botanicbento from "/public/images/botanicbento.png"
-import hoobank from "/public/images/hoobank.png"
-import firstportfolio from "/public/images/firstportfolio.png"
+import botanicbento from "/public/images/botanicbento.webp"
+import hoobank from "/public/images/hoobank.webp"
+import firstportfolio from "/public/images/firstportfolio.webp"
 
 import htmlIcon from "/public/images/html.svg"
 import cssIcon from "/public/images/css.svg"
