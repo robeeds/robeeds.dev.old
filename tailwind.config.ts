@@ -8,9 +8,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        poppins: ['Poppins', 'sans-serif']
-      },
       colors: {
         black: "#0A0E16", 
         white: "#FFFFFF",

@@ -4,7 +4,7 @@ export default function PostLayout({
     children: React.ReactNode;
   }>) {
     return (
-      <div lang="en" className="flex flex-1 flex-col justify-center items-center antialiased font-poppins text-dimWhite bg-black">
+      <div lang="en" className="flex flex-1 flex-col justify-center items-center antialiased text-dimWhite bg-black">
         <div
           className={`flex flex-col justify-center w-full max-w-[1440px]`}
         >

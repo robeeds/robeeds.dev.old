@@ -30,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="flex flex-col justify-center items-center antialiased font-poppins text-dimWhite bg-black">
+    <html lang="en" className={`flex flex-col justify-center items-center antialiased ${poppins.className} text-dimWhite bg-black`}>
       <body
         className={`flex flex-col justify-center min-h-[100vh] w-full max-w-[1440px]`}
       >
