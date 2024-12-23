@@ -4,7 +4,7 @@ import { Poppins } from 'next/font/google'
 import NavBar from "./ui/navbar";
 import Footer from "./ui/footer";
 
-export const poppins = Poppins({
+const poppins = Poppins({
   weight: ['400', '500', '600', '700', '800', '900'],
   subsets: ['latin'],
 })
