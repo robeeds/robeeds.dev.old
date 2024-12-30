@@ -25,8 +25,8 @@ export default function Footer() {
                     <Link 
                         href='https://github.com/robeeds'
                         target="blank" 
-                        className="p-2">
-                        prefetch={false}
+                        className="p-2"
+                        prefetch={false}>
                         <Image 
                             src={githubIcon}
                             alt="Github"
