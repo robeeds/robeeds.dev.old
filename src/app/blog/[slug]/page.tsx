@@ -2,6 +2,7 @@ import { getBlogBySlug, getAllBlogSlug } from "../fetchers";
 import { Metadata } from "next";
 import PostLayout from "./post-layout";
 
+
 export async function generateMetadata(
   props: {
     params: Promise<{ slug: string }>
@@ -45,10 +46,36 @@ export default async function BlogPage(
 ) {
   const params = await props.params;
   const blog = await getBlogBySlug(params.slug)
-  console.log(blog.frontmatter.title)
   return (
     <PostLayout>
-      <article className="p-4">{blog.content}</article>
+      
+
+      {/* This is the title section */}
+
+      <div className="flex flex-col flex-1 self-start">
+        <p className="font-semibold text-[48px]">{blog.frontmatter.title}</p>
+        <p className="text-gray">{blog.frontmatter.author}</p>
+        <p className="text-gray">{blog.frontmatter.publishDate}</p>
+      </div>
+
+      {/* Actual Blog Content */}
+
+      <article className="
+        max-w-[1000px]
+        prose
+        pb-4 
+        pt-8 
+        prose-headings:font-medium 
+        prose-headings:text-dimWhite 
+        prose-p:text-gray
+        prose-a:text-blue 
+        prose-a:no-underline
+        hover:prose-a:underline 
+        prose-ol:text-gray
+        prose-ul: text-gray
+        prose-strong:text-dimWhite
+        prose-code:text-gray
+      ">{blog.content}</article>
     </PostLayout>
   )
 }
