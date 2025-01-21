@@ -44,6 +44,5 @@ export async function getBlogs() {
 export function getAllBlogSlug() {
     const files = fs.readdirSync(contentDir)
     const slugs = files.map((file) => ({ slug: path.parse(file).name}))
-    console.log(slugs);
     return slugs
 }
