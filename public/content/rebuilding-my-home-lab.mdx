@@ -1,0 +1,79 @@
+---
+title: Rebuilding my Home Lab
+description:
+author: robeeds
+publishDate: 1/20/25
+previewImage: ../images/botanicbento.webp
+---
+
+
+## Background
+
+A few years ago I was gifted the Raspberry Pi 3B+ for Christmas. I made a few projects with it but never really documented what I did, and now that its storage drive became corrupted, I decided that this would be a great opportunity for me to become more familiar with the process of designing, developing, and managing a home lab.
+
+
+Previously, the Pi had been set up as a DNS server hosting [Pi-hole](https://pi-hole.net/).
+
+
+Pi-hole worked out very well for me, but this time I wanted to try something different and have the system scalable to my growing needs. After all, I felt like more could be done to improve the security, speed, and overall efficiency of my home network.
+
+
+## My Objectives
+
+- **Decrease network latency**
+- **Increase online privacy**
+- **Host multiple services**
+
+
+## Considerations
+
+First, I had to take consideration of the hardware specs of a [RPi 3B+](https://www.raspberrypi.com/products/raspberry-pi-3-model-b-plus/)
+
+
+- Broadcom BCM2837B0, Cortex-A53 (ARMv8) 64-bit SoC @ 1.4GHz
+- 1GB LPDDR2 SDRAM
+- 2.4GHz and 5GHz IEEE 802.11.b/g/n/ac wireless LAN, Bluetooth 4.2, BLE
+- Gigabit Ethernet over USB 2.0 (maximum throughput 300 Mbps)
+
+
+Although limited in resources, one thing I do pride myself on is ***making the best of what I have.***
+
+
+##  Findings
+
+After a few hours of research, I decided that I would try to use the following services:
+
+- [Docker](https://www.docker.com/)
+- [Portainer](https://www.portainer.io/)
+- [AdguardHome](https://github.com/AdguardTeam/AdGuardHome)
+- [UnboundDNS](https://www.nlnetlabs.nl/projects/unbound/about/)
+- [Nginx Proxy manager](https://nginxproxymanager.com/)
+- [Homepage](https://gethomepage.dev/)
+
+But Why?
+
+## Docker
+
+Docker simplifies development by storing, managing, and sharing Docker images. This means that you can run applications consistently across different environments. Docker can streamline your installations of essential network services from a few commands in the terminal.
+
+## Portainer
+
+Portainer is a simple web interface for managing docker instances.
+
+## AdguardHome
+
+Although Pi-hole was very user friendly and improved a significant amount over the years, AdguardHome has additional controls and filtering options over Pi-hole. Additionally, I've found a lot more documentation and tutorials in making AGH work with UnboundDNS. 
+
+## UnboundDNS
+
+UnboundDNS is a recursive domain name resolver. In other words, UnboundDNS allows me operate my own DNS server without worry of DNS poisoning from a third party service. Hosting Unbound on my RPi reduces the likeliness of getting affected by such an attack. 
+
+## Nginx Proxy manager
+
+Nginx Proxy manager allows users to manage SSL certificates to ensure that network traffic is encrypted over HTTPS. Since I am hosting multiple web services on my local network, I want to avoid coming across the annoying "*Your connection is not private*" screen.
+
+## Homepage
+
+A simple dashboard to view all system services.
+
+In future posts, I will go over my process of setting up this small RPi to be a useful home server. Stay tuned!

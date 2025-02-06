@@ -13,7 +13,7 @@ export async function generateMetadata(
   const blog = await getBlogBySlug(params.slug)
 
   const title = blog.frontmatter.title
-  const description = blog.frontmatter.description
+  const description = blog.frontmatter.description || ""
 
   const ogImageUrl = `/api/?title=${title}&desc=${description}`;
 
