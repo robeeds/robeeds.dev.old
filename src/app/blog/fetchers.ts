@@ -3,6 +3,7 @@ import path from "path"
 import { compileMDX } from 'next-mdx-remote/rsc'
 
 import { notFound } from "next/navigation"
+import { StaticImport } from "next/dist/shared/lib/get-img-props"
 
 const contentDir = path.join(process.cwd(), "public/content")
 
@@ -22,6 +23,7 @@ export async function getBlogBySlug(slug: string) {
         description: string
         author: string
         publishDate: string
+        previewImage: string | StaticImport
     }>({
         source: fileContent,
         options: { parseFrontmatter: true},

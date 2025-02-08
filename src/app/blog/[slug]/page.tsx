@@ -1,8 +1,12 @@
+// @/src/app/blog/[slug]/page.tsx
+
+// Imports
 import { getBlogBySlug, getAllBlogSlug } from "../fetchers";
 import { Metadata } from "next";
+import Image from "next/image";
 import PostLayout from "./post-layout";
 
-
+// Generate Metadata using Blog title and description
 export async function generateMetadata(
   props: {
     params: Promise<{ slug: string }>
@@ -49,10 +53,14 @@ export default async function BlogPage(
   return (
     <PostLayout>
       
+      {/* Image Preview */}
+      <div className="flex flex-1">
+        <Image src={blog.frontmatter.previewImage} alt="preview image" width={1000} height={1000} className="rounded-[15px]"/>
+      </div>
 
       {/* This is the title section */}
 
-      <div className="flex flex-col flex-1 self-start">
+      <div className="flex flex-col flex-1 self-start pt-8">
         <p className="font-semibold text-[48px]">{blog.frontmatter.title}</p>
         <p className="text-gray">{blog.frontmatter.author}</p>
         <p className="text-gray">{blog.frontmatter.publishDate}</p>
