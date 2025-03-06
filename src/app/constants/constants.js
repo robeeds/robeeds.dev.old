@@ -1,6 +1,7 @@
 import botanicbento from "/public/images/botanicbento.webp"
 import hoobank from "/public/images/hoobank.webp"
 import firstportfolio from "/public/images/firstportfolio.webp"
+import taskman from "/public/images/taskman.webp"
 
 import htmlIcon from "/public/images/html.svg"
 import cssIcon from "/public/images/css.svg"
@@ -37,8 +38,16 @@ export const navLinks = [
 
 export const projectInfo = [
     {
-        title: "Botanic Bento",
+        title: "TaskMan",
         num: 1,
+        langs: ["Next.js 15", "TailwindCSS", "Appwrite", "TypeScript"],
+        content: "A minimalistic gruvbox-themed task management application that employs Appwrite's Auth, Database, and Realtime APIs for user interactivity and an overall responsive user experience.",
+        img: taskman,
+        link: "https://taskman-beta.vercel.app/"
+    },
+    {
+        title: "Botanic Bento",
+        num: 2,
         langs: ["HTML", "TailwindCSS", "React.js"],
         content: "React-based site with Tailwind CSS for a seamless, stylish exploration of nature-inspired decor. Deployed on Vercel and responsive to all screen sizes.",
         img: botanicbento,
@@ -46,7 +55,7 @@ export const projectInfo = [
     },
     {
         title: "HooBank",
-        num: 2,
+        num: 3,
         langs: ["HTML", "TailwindCSS", "React.js"],
         content: "A project clone of @adrianhajdin's project_hoobank on GitHub. Made from scratch and deployed on Vercel. Responsive to all screen sizes.",
         img: hoobank,
@@ -54,7 +63,7 @@ export const projectInfo = [
     },
     {
         title: "First ePortfolio",
-        num: 3,
+        num: 4,
         langs: ["HTML", "BootstrapCSS", "JavaScript"],
         content: "My first ePortfolio. Made from scratch using the BootstrapCSS framework. ",
         img: firstportfolio,
