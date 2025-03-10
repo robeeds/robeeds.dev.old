@@ -12,10 +12,11 @@ import bootstrapIcon from "/public/images/bootstrap.svg"
 import nextjsIcon from "/public/images/nextjs.svg"
 import pythonIcon from "/public/images/python.svg"
 import typescriptIcon from "/public/images/typescript.svg"
+import appwriteIcon from "/public/images/appwrite.svg"
 
 export const navLinks = [
-    { 
-        name: 'home', 
+    {
+        name: 'home',
         href: '/',
     },
     {
@@ -29,7 +30,7 @@ export const navLinks = [
     {
         name: 'portfolio',
         href: '/#portfolio',
-    }, 
+    },
     {
         name: 'contact',
         href: '/#contact',
@@ -41,7 +42,7 @@ export const projectInfo = [
         title: "TaskMan",
         num: 1,
         langs: ["Next.js 15", "TailwindCSS", "Appwrite", "TypeScript"],
-        content: "A minimalistic gruvbox-themed task management application that employs Appwrite's Auth, Database, and Realtime APIs for user interactivity and an overall responsive user experience.",
+        content: "A minimalistic, gruvbox-themed task management application that employs Appwrite's Auth, Database, and Realtime APIs for user interactivity and an overall responsive user experience.",
         img: taskman,
         link: "https://taskman-beta.vercel.app/"
     },
@@ -116,6 +117,11 @@ export const techInfo = [
         id: 8,
         name: "Python",
         img: pythonIcon,
+    },
+    {
+        id: 9,
+        name: "Appwrite",
+        img: appwriteIcon
     }
 ];
 
