@@ -1,6 +1,6 @@
-# My Personal Portfolio
+# robeeds.dev.old
 
-This is my personal and modern ePortfolio. Built with Next.js 14, React, Tailwind, and deployed on Vercel.
+This repository holds the project files for a prior revision of robeeds.dev. Built with Next.js 14, React, Tailwind, and deployed on Vercel.
 
 ## Table of Contents
 - [Overview](#overview)
